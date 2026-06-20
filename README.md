@@ -226,7 +226,7 @@ Expected:
 
 ---
 
-# 📄 Step 8: Create docker-compose.yml
+# Step 8: Create docker-compose.yml
 
 ```bash
 nano docker-compose.yml
@@ -372,7 +372,7 @@ ENTER
 
 ---
 
-# 📧 Step 11: Create alertmanager.yml
+#  Step 11: Create alertmanager.yml
 
 Create Alertmanager configuration:
 
@@ -813,7 +813,7 @@ CPU utilization should return to normal.
 
 ---
 
-# 📸 Screenshots
+#  Screenshots
 
 Create:
 
@@ -884,25 +884,7 @@ docker logs alertmanager
 
 #  Complete Monitoring Workflow
 
-```mermaid
-flowchart TD
 
-A[Ubuntu Server]
---> B[Node Exporter]
-
-B --> C[Prometheus]
-
-C --> D[Grafana Dashboard]
-
-C --> E[Alertmanager]
-
-E --> F[Gmail SMTP]
-
-F --> G[Email Notification]
-
-C --> H[Prometheus Alerts Page]
-
-E --> I[Alertmanager UI]
 ```
 
 
