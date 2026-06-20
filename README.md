@@ -190,20 +190,7 @@ Verify:
 ```bash
 docker compose version
 ```
-
----
-
-#  Step 6: Install Git
-
-```bash
-sudo apt install git -y
-```
-
-Verify:
-
-```bash
-git --version
-```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 111740" src="https://github.com/user-attachments/assets/8009c6e4-2d7e-4522-a2b8-160d76a06b03" />
 
 ---
 
@@ -469,12 +456,16 @@ docker logs alertmanager
 http://<EC2-PUBLIC-IP>:3000
 ```
 
+
+
 Default credentials:
 
 ```text
 Username: admin
 Password: admin
 ```
+
+
 
 ---
 
@@ -484,6 +475,7 @@ Password: admin
 http://<EC2-PUBLIC-IP>:9090
 ```
 
+
 ---
 
 ## Alertmanager
@@ -492,6 +484,7 @@ http://<EC2-PUBLIC-IP>:9090
 http://<EC2-PUBLIC-IP>:9093
 ```
 
+
 ---
 
 ## Node Exporter Metrics
@@ -499,6 +492,8 @@ http://<EC2-PUBLIC-IP>:9093
 ```text
 http://<EC2-PUBLIC-IP>:9100/metrics
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 111946" src="https://github.com/user-attachments/assets/d50b729a-68e5-44cc-aa1e-9a0e37aedd7b" />
+
 
 ---
 
@@ -511,6 +506,7 @@ Username: admin
 Password: admin
 ```
 
+
 Navigate:
 
 ```text
@@ -522,6 +518,12 @@ Add Data Source
 ↓
 Prometheus
 ```
+
+
+
+
+
+
 
 URL:
 
@@ -553,6 +555,7 @@ Dashboards
 Import
 ```
 
+
 Dashboard ID:
 
 ```text
@@ -576,6 +579,9 @@ Click:
 ```text
 Import
 ```
+
+
+
 
 ---
 
@@ -634,26 +640,6 @@ State: OK
 State: OK
 ```
 
----
-
-#  Prometheus Architecture
-
-```mermaid
-flowchart LR
-
-A[Ubuntu EC2 Server]
---> B[Node Exporter]
-
-B --> C[Prometheus]
-
-C --> D[Grafana]
-
-C --> E[Alertmanager]
-
-E --> F[Gmail SMTP]
-
-F --> G[Email Alerts]
-```
 
 ---
 
@@ -795,47 +781,7 @@ After CPU usage returns to normal, a recovery email will be sent automatically:
 ```text
 [RESOLVED] HighCPUUsage
 ```
-
----
-
-# Step 23: Stop CPU Stress
-
-Terminate background processes:
-
-```bash
-killall yes
-```
-
-Verify:
-
-```bash
-top
-```
-
-CPU utilization should return to normal.
-
----
-
-#  Screenshots
-
-Create:
-
-```text
-screenshots/
-```
-
-Store screenshots:
-
-```text
-screenshots/
-
-├── grafana-dashboard.png
-├── prometheus-targets.png
-├── prometheus-alerts.png
-├── alertmanager-ui.png
-├── email-alert.png
-└── docker-containers.png
-```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 131725" src="https://github.com/user-attachments/assets/f6ff61d4-668e-4a48-96f4-bd9b7f287cbb" />
 
 ---
 
