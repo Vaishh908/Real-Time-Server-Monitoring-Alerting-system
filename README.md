@@ -1,5 +1,7 @@
 #  Real-Time Server Monitoring & Alerting System
 
+## Project Overview
+
 Real-Time Server Monitoring & Alerting System is a Docker-based observability solution designed to provide real-time visibility into Linux server performance and proactively notify administrators about critical system events. The system leverages Prometheus for metrics collection, Node Exporter for exposing Linux system metrics, Grafana for interactive visualization, and Alertmanager for managing and delivering email notifications.
 
 The monitoring stack continuously collects and analyzes key performance metrics such as CPU usage, memory consumption, disk utilization, and network traffic. Prometheus stores these metrics as time-series data, while Grafana transforms them into intuitive dashboards for easy analysis. Alert rules are configured to detect abnormal conditions, and Alertmanager ensures that timely notifications are sent via email whenever critical thresholds are exceeded.
@@ -25,6 +27,7 @@ This project is fully containerized using Docker and Docker Compose, making it l
 
 #  Architecture Diagram
 
+<img width="1536" height="1024" alt="ChatGPT Image Jun 20, 2026, 01_02_12 PM" src="https://github.com/user-attachments/assets/d5896634-30e7-475f-9f5e-48220b9900fd" />
 
 
 ---
