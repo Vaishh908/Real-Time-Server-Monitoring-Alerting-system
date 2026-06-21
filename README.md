@@ -94,8 +94,6 @@ t2.micro
 ```
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a72e2f72-3001-4715-a499-24c2ae5b7ad6" />
 
----
-
 ## Security Group Configuration
 
 | Port | Service       |
@@ -108,7 +106,6 @@ t2.micro
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2f30d20c-b5f8-4bf4-a782-c5aa64f35bee" />
 
----
 
 # Step 2: Connect to EC2
 
@@ -183,7 +180,6 @@ docker ps
 
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 111504" src="https://github.com/user-attachments/assets/aa990f76-58f9-4d09-a046-05e952169084" />
 
----
 
 # Step 5: Install Docker Compose
 
@@ -198,9 +194,7 @@ docker compose version
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 111740" src="https://github.com/user-attachments/assets/8009c6e4-2d7e-4522-a2b8-160d76a06b03" />
 
----
-
-#  Step 7: Create Project Directory
+#  Step 6: Create Project Directory
 
 ```bash
 mkdir monitoring-project
@@ -221,9 +215,7 @@ Expected:
 ```
 <img width="1920" height="421" alt="Screenshot 2026-06-20 111740" src="https://github.com/user-attachments/assets/5088462f-4e7f-4812-bffd-5e585ff69ec9" />
 
----
-
-# Step 8: Create docker-compose.yml
+# Step 7: Create docker-compose.yml
 
 ```bash
 nano docker-compose.yml
@@ -282,9 +274,7 @@ ENTER
 
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 120220" src="https://github.com/user-attachments/assets/2b2cf925-c513-4b6a-af99-ba5acb9bb2d5" />
 
----
-
-# Step 9: Create prometheus.yml
+# Step 8: Create prometheus.yml
 
 Create the Prometheus configuration file:
 
@@ -323,9 +313,7 @@ ENTER
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 120945" src="https://github.com/user-attachments/assets/7fd279c8-8e1b-4ef0-9c91-aaed5c1abdb9" />
 
----
-
-#  Step 10: Create alert_rules.yml
+#  Step 9: Create alert_rules.yml
 
 Create alert rules:
 
@@ -373,9 +361,7 @@ ENTER
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 120820" src="https://github.com/user-attachments/assets/360e46d1-a3be-4e12-90dc-49621e999531" />
 
----
-
-#  Step 11: Create alertmanager.yml
+#  Step 10: Create alertmanager.yml
 
 Create Alertmanager configuration:
 
@@ -416,9 +402,7 @@ ENTER
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 115639" src="https://github.com/user-attachments/assets/8a45216b-2dd8-4781-92a3-170c4d5a0d18" />
 
----
-
-#  Step 12: Start Containers
+#  Step 11: Start Containers
 
 Start all services:
 
@@ -443,8 +427,6 @@ alertmanager
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 120449" src="https://github.com/user-attachments/assets/d0dbdf3e-29e3-4aec-8bba-ec0bca4c6eb5" />
 
----
-
 #  View Running Containers
 
 ```bash
@@ -461,9 +443,7 @@ docker logs grafana
 docker logs alertmanager
 ```
 
----
-
-# Step 13: Access Services
+# Step 12: Access Services
 
 ## Grafana
 
@@ -478,8 +458,6 @@ Username: admin
 Password: admin
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 112309" src="https://github.com/user-attachments/assets/43f6cc04-d3c0-4b59-a4fa-61faaba9db92" />
-
----
 
 ## Prometheus
 
@@ -497,8 +475,6 @@ http://<EC2-PUBLIC-IP>:9093
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 120559" src="https://github.com/user-attachments/assets/c1184e7c-d3e9-40c1-9181-21738bc48a5a" />
 
----
-
 ## Node Exporter Metrics
 
 ```text
@@ -506,10 +482,7 @@ http://<EC2-PUBLIC-IP>:9100/metrics
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 111946" src="https://github.com/user-attachments/assets/d50b729a-68e5-44cc-aa1e-9a0e37aedd7b" />
 
-
----
-
-#  Step 14: Configure Grafana
+#  Step 13: Configure Grafana
 
 Login:
 
@@ -556,9 +529,7 @@ Successfully queried the Prometheus API.
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 112723" src="https://github.com/user-attachments/assets/344cb1c7-ce39-42c5-9522-7fb7656aff04" />
 
----
-
-#  Step 15: Import Grafana Dashboard
+#  Step 14: Import Grafana Dashboard
 
 Navigate:
 
@@ -593,8 +564,6 @@ Import
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 113104" src="https://github.com/user-attachments/assets/3ca25339-028e-490d-be9c-d5a8a9948507" />
 
----
-
 #  Dashboard Metrics
 
 The dashboard provides:
@@ -610,10 +579,7 @@ The dashboard provides:
 
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 113324" src="https://github.com/user-attachments/assets/a77121fd-0552-46bf-986e-f60add592289" />
 
-
----
-
-#  Step 16: Verify Prometheus Targets
+#  Step 15: Verify Prometheus Targets
 
 Open:
 
@@ -630,9 +596,7 @@ State: UP
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 112205" src="https://github.com/user-attachments/assets/0e9485dc-03fb-4d1e-a499-e12ff2fb77c7" />
 
----
-
-#  Step 17: Verify Alert Rules
+#  Step 16: Verify Alert Rules
 
 Open:
 
@@ -654,9 +618,6 @@ State: OK
 State: OK
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 121310" src="https://github.com/user-attachments/assets/dd629322-3b20-4c4a-8881-5d3093f25a5b" />
-
-
----
 
 #  Useful Docker Commands
 
@@ -694,7 +655,7 @@ docker logs grafana
 docker logs alertmanager
 ```
 
-#  Step 18: Test Alert Rules
+#  Step 17: Test Alert Rules
 
 To verify that Prometheus and Alertmanager are working correctly, generate high CPU usage on the Linux server.
 
@@ -711,7 +672,7 @@ These processes continuously consume CPU resources.
 
 ---
 
-#  Step 19: Verify CPU Usage
+#  Step 18: Verify CPU Usage
 
 Run:
 
@@ -729,7 +690,7 @@ CPU usage should increase significantly.
 
 ---
 
-#  Step 20: Verify Prometheus Alerts
+#  Step 19: Verify Prometheus Alerts
 
 Open Prometheus:
 
@@ -749,7 +710,7 @@ Severity: critical
 
 ---
 
-#  Step 21: Verify Alertmanager UI
+#  Step 20: Verify Alertmanager UI
 
 Open:
 
@@ -773,7 +734,7 @@ Alertmanager receives alerts from Prometheus and processes notifications.
 
 ---
 
-#  Step 22: Verify Email Notifications
+#  Step 21: Verify Email Notifications
 
 Alertmanager sends email alerts through Gmail SMTP.
 
@@ -799,8 +760,6 @@ After CPU usage returns to normal, a recovery email will be sent automatically:
 [RESOLVED] HighCPUUsage
 ```
 <img width="1920" height="1080" alt="Screenshot 2026-06-20 131725" src="https://github.com/user-attachments/assets/f6ff61d4-668e-4a48-96f4-bd9b7f287cbb" />
-
----
 
 #  Useful Docker Commands
 
@@ -850,11 +809,7 @@ docker logs alertmanager
 
 #  Complete Monitoring Workflow
 
-
-```
-
-
----
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8244bcc3-8d48-4410-b9b2-95a51163808b" />
 
 # Skills Demonstrated
 
