@@ -92,6 +92,7 @@ t2.micro
 ```text
 8 GB
 ```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a72e2f72-3001-4715-a499-24c2ae5b7ad6" />
 
 ---
 
@@ -104,6 +105,8 @@ t2.micro
 | 9090 | Prometheus    |
 | 9093 | Alertmanager  |
 | 9100 | Node Exporter |
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2f30d20c-b5f8-4bf4-a782-c5aa64f35bee" />
 
 ---
 
@@ -176,6 +179,9 @@ Test Docker:
 ```bash
 docker ps
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 111452" src="https://github.com/user-attachments/assets/a14e04f3-0961-4bac-82fc-e8dae1eb0912" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 111504" src="https://github.com/user-attachments/assets/aa990f76-58f9-4d09-a046-05e952169084" />
 
 ---
 
@@ -213,6 +219,7 @@ Expected:
 ```text
 /home/ubuntu/monitoring-project
 ```
+<img width="1920" height="421" alt="Screenshot 2026-06-20 111740" src="https://github.com/user-attachments/assets/5088462f-4e7f-4812-bffd-5e585ff69ec9" />
 
 ---
 
@@ -273,6 +280,10 @@ Y
 ENTER
 ```
 
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 120220" src="https://github.com/user-attachments/assets/2b2cf925-c513-4b6a-af99-ba5acb9bb2d5" />
+
+---
+
 # Step 9: Create prometheus.yml
 
 Create the Prometheus configuration file:
@@ -310,6 +321,7 @@ CTRL + X
 Y
 ENTER
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 120945" src="https://github.com/user-attachments/assets/7fd279c8-8e1b-4ef0-9c91-aaed5c1abdb9" />
 
 ---
 
@@ -359,6 +371,7 @@ CTRL + X
 Y
 ENTER
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 120820" src="https://github.com/user-attachments/assets/360e46d1-a3be-4e12-90dc-49621e999531" />
 
 ---
 
@@ -401,6 +414,7 @@ CTRL + X
 Y
 ENTER
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 115639" src="https://github.com/user-attachments/assets/8a45216b-2dd8-4781-92a3-170c4d5a0d18" />
 
 ---
 
@@ -427,6 +441,7 @@ grafana
 node-exporter
 alertmanager
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 120449" src="https://github.com/user-attachments/assets/d0dbdf3e-29e3-4aec-8bba-ec0bca4c6eb5" />
 
 ---
 
@@ -456,16 +471,13 @@ docker logs alertmanager
 http://<EC2-PUBLIC-IP>:3000
 ```
 
-
-
 Default credentials:
 
 ```text
 Username: admin
 Password: admin
 ```
-
-
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 112309" src="https://github.com/user-attachments/assets/43f6cc04-d3c0-4b59-a4fa-61faaba9db92" />
 
 ---
 
@@ -483,7 +495,7 @@ http://<EC2-PUBLIC-IP>:9090
 ```text
 http://<EC2-PUBLIC-IP>:9093
 ```
-
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 120559" src="https://github.com/user-attachments/assets/c1184e7c-d3e9-40c1-9181-21738bc48a5a" />
 
 ---
 
@@ -518,11 +530,11 @@ Add Data Source
 ↓
 Prometheus
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 112615" src="https://github.com/user-attachments/assets/842baa48-f9e7-427f-83bd-ec686f52bdf4" />
 
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 112630" src="https://github.com/user-attachments/assets/a4196319-5dba-4571-89e2-366cdfa90261" />
 
-
-
-
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 112711" src="https://github.com/user-attachments/assets/fd7bc1e4-61ca-48eb-a22d-2e129f5633d0" />
 
 
 URL:
@@ -542,6 +554,7 @@ Expected:
 ```text
 Successfully queried the Prometheus API.
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 112723" src="https://github.com/user-attachments/assets/344cb1c7-ce39-42c5-9522-7fb7656aff04" />
 
 ---
 
@@ -554,7 +567,6 @@ Dashboards
 ↓
 Import
 ```
-
 
 Dashboard ID:
 
@@ -579,9 +591,7 @@ Click:
 ```text
 Import
 ```
-
-
-
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 113104" src="https://github.com/user-attachments/assets/3ca25339-028e-490d-be9c-d5a8a9948507" />
 
 ---
 
@@ -597,6 +607,9 @@ The dashboard provides:
 * System Load
 * Uptime
 * Processes
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 113324" src="https://github.com/user-attachments/assets/a77121fd-0552-46bf-986e-f60add592289" />
+
 
 ---
 
@@ -615,6 +628,7 @@ node-exporter:9100
 
 State: UP
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 112205" src="https://github.com/user-attachments/assets/0e9485dc-03fb-4d1e-a499-e12ff2fb77c7" />
 
 ---
 
@@ -639,6 +653,7 @@ State: OK
 ```text
 State: OK
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 121310" src="https://github.com/user-attachments/assets/dd629322-3b20-4c4a-8881-5d3093f25a5b" />
 
 
 ---
@@ -741,6 +756,8 @@ Open:
 ```text
 http://<EC2-PUBLIC-IP>:9093
 ```
+<img width="1920" height="1080" alt="Screenshot 2026-06-20 120559" src="https://github.com/user-attachments/assets/02b5395d-de7b-4a68-b4f5-3fb2d013cfc5" />
+
 
 Expected:
 
@@ -875,9 +892,6 @@ real-time-server-monitoring-alerting-system/
     ├── email-alert.png
     └── docker-containers.png
 ```
-
-
----
 
 ## Project Summary
 
